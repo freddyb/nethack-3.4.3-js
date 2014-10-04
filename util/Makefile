@@ -15,7 +15,7 @@
 
 # if you are using gcc as your compiler,
 #	uncomment the CC definition below if it's not in your environment
-CC = clang
+#CC =
 #
 #	For Bull DPX/2 systems at B.O.S. 2.0 or higher use the following:
 #
