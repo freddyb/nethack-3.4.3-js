@@ -14,7 +14,7 @@
 # MAKE = make
 
 # make NetHack
-PREFIX	 = /home/freddy/opt/nethack-3.4.3
+PREFIX	 = /home/freddy/opt/nethack-3.4.3-js
 GAME     = nethack
 # GAME     = nethack.prg
 GAMEUID  = games
