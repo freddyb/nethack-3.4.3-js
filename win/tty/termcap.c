@@ -835,9 +835,7 @@ cl_eos()			/* free after Robert Viduya */
 
 #include <curses.h>
 
-#ifndef LINUX
 extern char *tparm();
-#endif
 
 #  ifdef COLOR_BLACK	/* trust include file */
 #undef COLOR_BLACK
