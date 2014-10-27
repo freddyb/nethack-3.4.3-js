@@ -1,4 +1,3 @@
-mkdir -p gamesdir
 rm -rf /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir
 mkdir -p /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/save
 chmod 0755 /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/save
