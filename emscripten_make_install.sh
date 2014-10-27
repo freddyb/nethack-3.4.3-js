@@ -23,9 +23,9 @@ sed -e 's;./games/lib/nethackdir;/home/freddy/opt/nethack-3.4.3-js/games/lib/net
 		> /home/freddy/opt/nethack-3.4.3-js/games/nethack
 chmod 04755 /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/nethack
 chmod 0755 /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/recover
-true games /home/freddy/opt/nethack-3.4.3-js/games/nethack
-chmod 0755 /home/freddy/opt/nethack-3.4.3-js/games/nethack
 touch /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/perm /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/record /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/logfile
 ( cd /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir ; chmod 0644 perm record logfile )
 
-
+cp src/nethack.bc games/lib/nethackdir/
+cd games/lib/nethackdir/
+em++ -s TOTAL_MEMORY=67108864 nethack.bc -o nethack.html --preload-file .
