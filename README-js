@@ -1,6 +1,0 @@
-this is a feeble attempt to build nethack for the web with emscripten.
-the first commits contain the modifications on top of the vanilla nethack to
-make it compile on my machine (linux, 64bit, pretty recent gcc)
-
-Any kind of volunteering and contribution is highly appreciated.
-I am completely new to emscripten and the nethack code base.
