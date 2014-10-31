@@ -5,6 +5,7 @@
 /* various code that was replicated in *main.c */
 
 #include "hack.h"
+#include <emscripten.h>
 
 #ifndef NO_SIGNAL
 #include <signal.h>
@@ -59,7 +60,12 @@ moveloop()
     u.uz0.dlevel = u.uz.dlevel;
     youmonst.movement = NORMAL_SPEED;	/* give the hero some movement points */
 
-    for(;;) {
+    #ifdef __EMSCRIPTEN__
+    do {
+    #else
+    for (;;) {
+    #endif
+
 	get_nh_event();
 #ifdef POSITIONBAR
 	do_positionbar();
@@ -421,6 +427,10 @@ moveloop()
 	    display_nhwindow(WIN_MAP, FALSE);
 	}
     }
+    #ifdef __EMSCRIPTEN__
+    while (0);
+    emscripten_set_main_loop(moveloop, 60, 1);
+    #endif
 }
 
 #endif /* OVL0 */

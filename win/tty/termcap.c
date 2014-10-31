@@ -196,7 +196,8 @@ int *wid, *hgt;
 # endif /* TOS */
 #endif /* ANSI_DEFAULT */
 
-#ifdef TERMLIB
+/* disabling this termcamp stuff, not really needed. */
+#ifndef TERMLIB
 	tptr = (char *) alloc(1024);
 
 	tbufptr = tbuf;
