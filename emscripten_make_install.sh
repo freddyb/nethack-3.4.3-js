@@ -27,5 +27,8 @@ touch /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir/perm /home/freddy/o
 ( cd /home/freddy/opt/nethack-3.4.3-js/games/lib/nethackdir ; chmod 0644 perm record logfile )
 
 cp src/nethack.bc games/lib/nethackdir/
+#cd games/lib/nethackdir/
+em++ -s TOTAL_MEMORY=67108864 --pre-js env.js games/lib/nethackdir/nethack.bc -o games/lib/nethackdir/nethack.html --preload-file games/lib/nethackdir
+
+
 cd games/lib/nethackdir/
-em++ -s TOTAL_MEMORY=67108864 nethack.bc -o nethack.html --preload-file .
