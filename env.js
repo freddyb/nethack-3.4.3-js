@@ -3,7 +3,7 @@ Module.preRun.push(function() {
         'HACKDIR':'.',
         'HACK': './nethack',
         'MAXNROFPLAYERS': '4', // envs-values are strings, right?
-        'TERM': 'color',
+        'TERM': 'xterm',
         'PAGER': 'less',
         'TERMCAP': './termcap',
     };
