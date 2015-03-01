@@ -429,7 +429,7 @@ moveloop()
     }
     #ifdef __EMSCRIPTEN__
     while (0);
-    emscripten_set_main_loop(moveloop, 60, 1);
+    emscripten_set_main_loop(moveloop, 0, 1);
     #endif
 }
 
