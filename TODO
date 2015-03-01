@@ -1,2 +1,3 @@
 * next steps: rewrite endless loops (see endless_loops file)
 * re-work mainloop. I think the emscripten_set_mainloop call should be somewhere else
+* use asyncify to rewrite sleep() calls: https://github.com/kripken/emscripten/wiki/Asyncify
