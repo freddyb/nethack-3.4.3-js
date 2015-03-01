@@ -1,0 +1,2 @@
+* next steps: rewrite endless loops (see endless_loops file)
+* re-work mainloop. I think the emscripten_set_mainloop call should be somewhere else

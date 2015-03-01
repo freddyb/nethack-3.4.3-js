@@ -1,0 +1,25 @@
+./sys/msdos/video.c:849:    while (1) {
+./sys/mac/mrecover.c:789:	while (1)
+./sys/mac/mrecover.c:906:	}				/* while (1) */
+./src/engrave.c:1146:	while(1) {
+./src/mail.c:296:    while (1) {
+./src/restore.c:202:	while(1) {
+./src/restore.c:258:	while(1) {
+./src/restore.c:606:	while(1) {
+./src/files.c:1611:    while (1) {
+./src/trap.c:64:    while (1) {
+./src/uhitm.c:54:	while (1) {
+./src/extralev.c:155:	while(1) {
+./src/mhitu.c:722:	while (1) {
+./src/mhitu.c:1083:			while(1) {
+./src/mkmaze.c:726:	while(1) {
+./nethack.js:1339:      var iList = parse(true);
+./nethack.js:3000:        while (true) {
+./nethack.js:478877:    while (true) {
+./games/lib/nethackdir/nethack.js:1353:      var iList = parse(true);
+./games/lib/nethackdir/nethack.js:3026:        while (true) {
+./games/lib/nethackdir/nethack.js:583737:    while (true) {
+./sys/mac/macfile.c:193:	SetResLoad(true);
+./src/nethack.js:903:      var iList = parse(true);
+./src/nethack.js:2562:        while (true) {
+./src/nethack.js:478332:    while (true) {
